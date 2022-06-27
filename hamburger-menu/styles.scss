@@ -1,0 +1,35 @@
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.nav {
+  display: inline-block;
+
+  &__button {
+    display: block;
+
+    & * {
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s ease-out;
+    }
+
+    .change &_top {
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change &_center {
+      transform: rotateX(90deg);
+      opacity: 0;
+    }
+
+    .change &_bottom {
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+  }
+}
