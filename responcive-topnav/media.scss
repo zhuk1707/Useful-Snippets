@@ -1,0 +1,115 @@
+body.lock {
+  @media (max-width: 770px) {
+    overflow: hidden;
+  }
+}
+
+.header {
+  &__body {
+    @media (max-width: 770px) {
+      height: 40px;
+    }
+  }
+
+  &__burger {
+    @media (max-width: 770px) {
+      display: block;
+      position: relative;
+      z-index: 3;
+
+      width: 30px;
+      height: 20px;
+
+      & span {
+        position: absolute;
+        top: 9px;
+        width: 100%;
+        height: 2px;
+        background-color: #fafafa;
+
+        transition: .3s ease;
+      }
+
+      &:before, &:after {
+        content: "";
+        background-color: #fafafa;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+
+        transition: .3s ease;
+
+      }
+
+      &:before, {
+        top: 0;
+      }
+
+      &:after, {
+        bottom: 0;
+      }
+
+      &.active {
+        span {
+          height: 0;
+          opacity: 0;
+
+        }
+      }
+
+      &.active {
+        &:before {
+          transform: rotate(45deg);
+          top: 9px;
+        }
+
+        &:after {
+          transform: rotate(-45deg);
+          bottom: 9px;
+
+        }
+      }
+    }
+  }
+
+  &__menu {
+    @media (max-width: 770px) {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 80px 40px;
+      overflow: auto;
+      background-color: #999999;
+
+
+      transition: 0.3s ease;
+
+      &.active {
+        top: 0;
+      }
+    }
+  }
+
+  &__list {
+    @media (max-width: 770px) {
+      column-gap: 0;
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+
+  &__link {
+    @media (max-width: 770px) {
+      font-size: 32px;
+    }
+  }
+}
+
+.content {
+  @media (max-width: 770px) {
+    padding-top: 40px;
+  }
+}
