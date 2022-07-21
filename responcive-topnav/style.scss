@@ -21,7 +21,7 @@ body {
   padding: 0 10px;
 }
 
-@mixin lint-style{
+@mixin list-style{
   text-decoration: none;
   color: #fafafa;
 }
@@ -54,7 +54,7 @@ body {
   }
 
   &__logo {
-    @include lint-style;
+    @include list-style;
     font-size: 32px;
     font-weight: 700;
     position: relative;
@@ -83,9 +83,8 @@ body {
   &__link {
     list-style: none;
 
-
     a {
-      @include lint-style;
+      @include list-style;
 
       &:hover {
         color: #cccccc;
