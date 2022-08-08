@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+.accordion__btn {
+  width: 100%;
+  text-align: left;
+  padding: 18px;
+  font-size: inherit;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  transition: 0.3s;
+  position: relative;
+}
+.accordion__btn:hover {
+  background-color: #ccc;
+}
+.accordion__btn span::before {
+  transform: rotate(-90deg);
+}
+.accordion__btn span::after, .accordion__btn span::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 18px;
+  background-color: #444444;
+  position: absolute;
+  right: 18px;
+  top: 28px;
+  transition: 0.2s ease-in-out;
+}
+.accordion__panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+
+.active {
+  background-color: #ccc;
+}
+.active span::before {
+  transform: rotate(-45deg);
+  transition: 0.2s ease-in-out;
+}
+.active span::after {
+  transform: rotate(45deg);
+  transition: 0.2s ease-in-out;
+}
+
+/*# sourceMappingURL=style.css.map */
