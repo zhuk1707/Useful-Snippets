@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+.search-menu {
+  display: flex;
+  background-color: #dddddd;
+}
+.search-menu__left {
+  flex: 35%;
+}
+.search-menu__logo {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.search-menu img {
+  width: 50px;
+}
+.search-menu__brand-name {
+  font-weight: 700;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.search-menu__right {
+  flex: 65%;
+  background-color: #ececec;
+  padding: 0 20px;
+}
+
+#mySearch {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+}
+
+#myMenu li a {
+  padding: 18px 20px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+
+/*# sourceMappingURL=style.css.map */
